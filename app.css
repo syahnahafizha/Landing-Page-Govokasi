@@ -161,7 +161,6 @@ button a{
 
 button:hover {
     border: 4px solid black;;
-    color: black;
     font-weight: bold;
     background-color: goldenrod;
 }
@@ -242,7 +241,20 @@ footer {
     text-align: center;
 }
 
+.service-content h3 {
+    margin-bottom: 0.5rem; /* Atur margin bawah h3 */
+}
+
 .service-content p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.left p{
+    text-align: justify;
+}
+
+.right p{
     text-align: center;
 }
 
@@ -254,7 +266,7 @@ footer {
 }
 
 .left, .right {
-    width: 300px;
+    width: 500px;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -273,6 +285,11 @@ footer {
     padding: 20px; /* Tambahkan padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan box shadow */
     margin-bottom: 3rem;
+}
+
+.right img {
+    width: 120px;
+    height: 120px;
 }
 
 @media screen and (max-width: 768px) {
