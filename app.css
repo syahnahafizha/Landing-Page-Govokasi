@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Quicksand:wght@400;500&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    z-index: 999;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+    color: white;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: white;
+    color: black;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 4rem auto 2rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .content {
+    padding-right: 2rem;
+    align-items: center;
+    display: flex; /* Ensure content is displayed as flex */
+    flex-direction: column; /* Stack items vertically */
+    max-width: 100%; /* Ensure content doesn't overflow */
+    width: 100%; /* Occupy full width of the container */
+}
+
+main .content .content-description {
+    text-align: center;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-family: monospace;
+    margin-block: 1rem;
+    color: rgb(124, 124, 196);
+    text-shadow: 0 2px 1px black;
+}
+   
+main .content .content-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+   
+button {
+    font-size: 15px;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+button a{
+    color: white; /* Make text white */
+    text-decoration: none; /* Remove underline */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border: 2px solid #333; /* Add border */
+    padding: 1rem; /* Add padding */
+    border-radius: 12px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for animation */
+}
+
+.wrapper:hover {
+    transform: scale(1.02); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance box-shadow on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.num {
+    font-size: 24px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+button:hover {
+    border: 4px solid black;;
+    color: black;
+    font-weight: bold;
+    background-color: goldenrod;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+   
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+.fab.fa-twitter.fa-twitter {
+    font-family: sans-serif;
+}
+
+.fab.fa-twitter::before {
+    content: "𝕏";
+    font-size: 1.2em;
+}
+   
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+   
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+   
+main aside .social-media li a:hover {
+    color: rgb(124, 124, 196);
+}
+
+footer {
+    width: 100%;
+    padding: 1.5rem;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: white;
+}
+
+.service-content {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-content h1{
+    font-size: 3.5rem;
+    color: rgb(124, 124, 196);
+    text-shadow: 0 2px 1px black;
+    text-align: center;
+}
+
+.service-content p {
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.left, .right {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left {
+    border: 2px solid #333; /* Tambahkan border pada div left */
+    border-radius: 12px; /* Tambahkan border radius */
+    padding: 20px; /* Tambahkan padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan box shadow */
+    margin-bottom: 3rem;
+}
+
+.right {
+    border: 2px solid #333; /* Tambahkan border pada div right */
+    border-radius: 12px; /* Tambahkan border radius */
+    padding: 20px; /* Tambahkan padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan box shadow */
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main {
+        padding: 1rem 2rem;
+        padding-top: 9rem;
+    }
+     
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+     
+    main .content .content-description .title {
+        font-size: 3rem;
+    }
+     
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+     
+    main .content .content-image {
+        order: -1;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
